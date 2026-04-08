@@ -186,7 +186,8 @@ button.loading {
 
 <div class="login-box">
     <h2>SIAKAD</h2>
-    <div class="subtitle">Login ke sistem akademik</div>
+    <h2>BISNIS DIGITAL</h2>
+    <div class="subtitle">Login ke sistem akademik bisnis digital</div>
 
     <?php if (isset($error)) echo "<div class='error'>$error</div>"; ?>
 

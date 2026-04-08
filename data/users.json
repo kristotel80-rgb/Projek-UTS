@@ -6,7 +6,7 @@
     "role": "admin"
   },
   {
-    "nama": "Dosen A",
+    "nama": "Dosen",
     "email": "dosen@gmail.com",
     "password": "123",
     "role": "dosen"

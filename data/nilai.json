@@ -58,5 +58,11 @@
         "nama_matkul": "Manajemen Pemasaran Digital",
         "sks": "2",
         "nilai": "85"
+    },
+    {
+        "nim": "I43252719",
+        "nama_matkul": "Visualisasi Pengambilan Keputusan Bisnis",
+        "sks": "4",
+        "nilai": "95"
     }
 ]

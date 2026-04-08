@@ -56,22 +56,16 @@ body {
 
 /* AVATAR */
 .avatar {
-    width:28px;
-    height:28px;
+    width:32px;
+    height:32px;
     background:#e6f0ff;
     color:#0a192f;
     border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:13px;
+    font-size:14px;
     font-weight:bold;
-    animation:pulse 3s infinite;
-}
-
-@keyframes pulse {
-    0%,100% {box-shadow:0 0 0 0 rgba(10,25,47,0.3);}
-    50% {box-shadow:0 0 0 6px rgba(10,25,47,0);}
 }
 
 /* CONTAINER */
@@ -79,12 +73,6 @@ body {
     max-width:1000px;
     margin:auto;
     padding:25px;
-    animation:fadeIn 0.6s ease;
-}
-
-@keyframes fadeIn {
-    from {opacity:0; transform:translateY(15px);}
-    to {opacity:1; transform:translateY(0);}
 }
 
 /* HEADER */
@@ -99,87 +87,76 @@ body {
     margin-bottom:20px;
 }
 
-/* GRID */
+/* GRID (CENTER CARD) */
 .grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
-    gap:15px;
+    display:flex;
+    justify-content:center;
 }
 
 /* CARD */
 .card {
+    width:500px;
+    max-width:100%;
     background:white;
-    padding:16px;
-    border-radius:10px;
+    padding:30px;
+    border-radius:14px;
     border:1px solid #e5e7eb;
-    position:relative;
-    overflow:hidden;
     cursor:pointer;
     transition:0.3s;
+
+    /* 🔥 CENTER ISI CARD */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
 }
 
-/* Ripple */
-.card::after {
-    content:"";
-    position:absolute;
-    inset:0;
-    background:radial-gradient(circle, rgba(10,25,47,0.08), transparent 70%);
-    opacity:0;
-    transition:0.3s;
-}
-
-.card:hover::after {
-    opacity:1;
-}
-
-/* Hover */
 .card:hover {
-    transform:translateY(-4px) scale(1.01);
-    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.08);
 }
 
 /* ICON */
 .icon {
-    font-size:22px;
+    font-size:32px;
     color:#0a192f;
-    margin-bottom:8px;
-    transition:0.3s;
-}
-
-.card:hover .icon {
-    transform:scale(1.2) rotate(3deg);
+    margin-bottom:10px;
 }
 
 /* TEXT */
 .card h3 {
-    font-size:13px;
+    font-size:16px;
     color:#0a192f;
+    margin-bottom:4px;
 }
 
 .card p {
-    font-size:11px;
+    font-size:13px;
     color:#777;
 }
 
 /* LOGOUT */
 .logout {
-    margin-top:20px;
+    margin-top:25px;
     display:inline-flex;
     align-items:center;
-    gap:5px;
-    font-size:12px;
-    color:#0a192f;
+    gap:6px;
+    padding:10px 16px;
+    border-radius:10px;
+    background:#0a192f; 
+    color:white;      
     text-decoration:none;
-    padding:6px 10px;
-    border-radius:6px;
-    border:1px solid #e5e7eb;
-    transition:0.25s;
+    font-size:13px;
+    transition:0.3s;
+    border:none;
+
 }
 
 .logout:hover {
-    background:#0a192f;
-    color:white;
+    background:#112240; 
     transform:translateY(-1px);
+    box-shadow:0 6px 12px rgba(0,0,0,0.15);
 }
 
 /* FOOTER */
@@ -189,10 +166,6 @@ body {
     font-size:11px;
     color:#aaa;
 }
-
-.material-symbols-outlined {
-    font-size:22px;
-}
 </style>
 </head>
 
@@ -200,7 +173,7 @@ body {
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <div><strong>SIAKAD</strong></div>
+    <strong>SIAKAD</strong>
 
     <div class="user">
         <div class="avatar">
@@ -212,20 +185,19 @@ body {
 
 <div class="container">
 
+    <!-- HEADER -->
     <div class="header">
         <h2>Dashboard Dosen</h2>
         <p>Selamat Datang</p>
     </div>
 
-    <!-- MENU -->
+    <!-- CARD -->
     <div class="grid">
-
         <div class="card" onclick="goTo('nilai.php')">
             <div class="icon material-symbols-outlined">edit_note</div>
             <h3>Input Nilai</h3>
             <p>Kelola dan input nilai mahasiswa</p>
         </div>
-
     </div>
 
     <!-- LOGOUT -->
