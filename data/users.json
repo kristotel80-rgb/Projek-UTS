@@ -1,0 +1,28 @@
+[
+  {
+    "nama": "Admin",
+    "email": "admin@gmail.com",
+    "password": "123",
+    "role": "admin"
+  },
+  {
+    "nama": "Dosen A",
+    "email": "dosen@gmail.com",
+    "password": "123",
+    "role": "dosen"
+  },
+  {
+    "nama": "Budi",
+    "email": "budi@gmail.com",
+    "password": "123",
+    "role": "mahasiswa",
+    "nim": "I43252719"
+  },
+  {
+    "nama": "Rhea",
+    "email": "rhea@gmail.com",
+    "password": "123",
+    "role": "mahasiswa",
+    "nim": "I43252702"
+  }
+]

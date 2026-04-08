@@ -1,0 +1,27 @@
+[
+    {
+        "kode": "MK01",
+        "nama": "Visualisasi Pengambilan Keputusan Bisnis",
+        "sks": "4"
+    },
+    {
+        "kode": "MK02",
+        "nama": "Pemrograman Berbasis Objek",
+        "sks": "2"
+    },
+    {
+        "kode": "MK03",
+        "nama": "Multimedia dan Desain Grafis",
+        "sks": "4"
+    },
+    {
+        "kode": "MK04",
+        "nama": "Intermediate",
+        "sks": "2"
+    },
+    {
+        "kode": "MK05",
+        "nama": "Manajemen Pemasaran Digital",
+        "sks": "2"
+    }
+]
